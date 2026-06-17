@@ -1,0 +1,228 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+/* Navbar */
+
+nav{
+background:#0f0f0f;
+padding:15px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:gold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:gold;
+font-weight:600;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:white;
+}
+
+/* Hero Section */
+
+.hero{
+min-height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-logo{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:65px;
+color:gold;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+color:#ddd;
+}
+
+/* Button */
+
+.btn{
+background:gold;
+color:black;
+padding:14px 28px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* About */
+
+.about{
+max-width:850px;
+margin:auto;
+padding:70px 20px;
+text-align:center;
+}
+
+.about h2{
+font-size:35px;
+color:gold;
+margin-bottom:20px;
+}
+
+.about p{
+line-height:1.8;
+color:#ddd;
+}
+
+/* Products */
+
+.title{
+text-align:center;
+font-size:42px;
+color:gold;
+padding:40px 0;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:30px;
+}
+
+.card{
+background:#111;
+padding:15px;
+border-radius:15px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card h3{
+color:gold;
+margin-top:15px;
+}
+
+.card p{
+margin:10px 0;
+}
+
+/* Collection */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+padding:30px;
+}
+
+.gallery img{
+width:100%;
+height:420px;
+object-fit:cover;
+border-radius:12px;
+}
+
+/* Contact */
+
+.contact{
+padding:60px 20px;
+text-align:center;
+}
+
+.contact h1{
+color:gold;
+margin-bottom:20px;
+}
+
+.contact p{
+margin:12px 0;
+}
+
+.contact-home{
+text-align:center;
+padding:60px 20px;
+}
+
+/* Footer */
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+margin-top:40px;
+color:#aaa;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-logo{
+width:160px;
+height:160px;
+}
+
+.title{
+font-size:32px;
+}
+
+}
